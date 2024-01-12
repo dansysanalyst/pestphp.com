@@ -9,7 +9,7 @@
 
                 <div class="docs-main max-w-prose DocSearch-content mx-auto lg:mr-0 relative w-full px-3 lg:px-0 mt-6 mb-20">
                     <div class="w-100 lg:block absolute top-0 right-0 hidden h-8 mt-2 text-sm">
-                        <a href="https://github.com/pestphp/pestphp.com-next/edit/main/resources/views/ide.blade.php">
+                        <a href="https://github.com/pestphp/pestphp.com/edit/next/resources/views/ide.blade.php">
                             Edit this page →
                         </a>
                     </div>
@@ -21,7 +21,7 @@
                     </p>
 
                     <p>
-                        Currently, our team is in charge of maintaining the PHPStorm plugin, which can be easily accessed on Jetstream's Marketplace.
+                        Currently, the PhpStorm team at JetBrains is maintaining the Pest Plugin for PhpStorm. It is installed by default since PhpStorm 2023.3.
                     </p>
 
                     <div class="mt-6 mb-12">

@@ -22,7 +22,12 @@
     <meta property="og:description" content="{{ $description }}">
     <meta property="og:url" content="{{ url()->current() }}">
 
-    <meta property="og:image" content="https://pestphp.com/assets/img/og.jpg">
+    @if (str_ends_with(url()->current(), 'announcing-stressless'))
+        <meta property="og:image" content="https://pestphp.com/assets/img/stressless-announcement.jpg">
+    @else
+        <meta property="og:image" content="https://pestphp.com/assets/img/og-next.jpg">
+    @endif
+
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -32,9 +37,11 @@
 
     @vite(['resources/css/app.scss', 'resources/js/app.js'])
     <script>
-        if (!('theme' in localStorage)) {
-            localStorage.theme = 'dark';
-        }
+        // if (!('theme' in localStorage)) {
+        //    localStorage.theme = 'dark';
+        //}
+
+        localStorage.theme = 'dark';
 
         document.documentElement.classList[localStorage.theme === 'dark' ? 'add' : 'remove']('dark');
     </script>
